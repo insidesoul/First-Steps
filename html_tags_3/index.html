@@ -1,0 +1,44 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Familiarity html tags. Part №3 (Формы)</title>
+	<!-- кодировка страницы -->
+	<meta http equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<!-- Отображаемое тело страницы -->
+	<body>
+		<p>Name</p>
+		<form action="#" method="post" enctype="multipart/from-data"></form>
+		<input placeholder="Name" type="text" name="Username" value="" />
+		<p>Password</p>
+		<input type="Password" name="Password" value="">
+		<p>Phone</p>
+		<input type="text" name="Number" value="">
+		<p>Gender</p>
+		<div><input checked tabindex="1" type="radio" name="Gender" value="Male">Male
+		</div>
+		<div><input type="radio" name="Gender" value="Female">Female
+		</div>
+		<P>Estate</P>
+		<div><input checked tabindex="2" type="checkbox" name="Estate" value="Bicycle">Bicycle</div>
+		<div><input type="checkbox" name="Estate" value="Сar">Car</div>
+		<div><input disabled type="checkbox" name="Estate" value="House">House</div>
+		<p>Additional information</p>
+		<textarea name="text"></textarea>
+		<p>Attach a photo</p>
+		<input type="file" name="photo" value="">
+		<p>Favorite color</p>
+		<select>
+			<option value="Red">Red</option>
+			<option value="Green">Green</option>
+			<option selected value="Yellow">Yellow</option>
+		</select>
+		<p>Action </p>
+		<button type="submit">Отправить</button>
+		<button type="reset">Очисить</button>
+	</body>
+</html>
