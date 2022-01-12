@@ -1,0 +1,81 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	widows: 100%;
+	font-size: 1;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/*---------------------------------*/
+
+.content{
+	margin: 161px 0 0 291px;
+}
+
+.listfirst {
+	color: #273d46;
+	line-height: 36px;
+	font-size: 20px;
+}
+.listfirst li{
+	padding: 0 0 0 27px;
+	background: url('../img/Icons/li.svg') 0 10px/20px auto no-repeat;
+}
+.listfirst li:first-child{
+	font-family: Arial;
+	text-decoration: line-through;
+}
+.listfirst li:nth-child(2){
+	font-family: Arial;
+	font-weight: 700;
+}
+.listfirst li:nth-child(3){
+	font-family: Arial;
+	font-style: italic;
+}
+.listfirst li:last-child{
+	font-family: Arial;
+	text-transform: uppercase;
+}
+.aa:hover{
+	text-decoration: none;
+}
+.ab:hover{
+	color: #d55a5a;
+}
+.ac:hover {
+	font-style: normal;
+}
+.ad {}
+
+.fullstory {}
+.wait {}
