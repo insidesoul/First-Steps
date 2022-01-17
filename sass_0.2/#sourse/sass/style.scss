@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	widows: 100%;
+	font-size: 1;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+//............................
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+%dib{display:inline-block;}
+$bb:#fff;
+
+body{
+  background: #9999;
+}
+.content{
+  margin: 0 0 0 200px;
+  width:1280px;
+  height:790px;
+  background: url('../../img/livello_1_2.png') 0 0/auto auto no-repeat;
+}
+a{
+  color: $bb;
+    &:visited{
+    color: #9999;
+  }
+  &:hover{
+    color: pink;
+  }
+  &:active{
+    color: purple;
+  }
+}
+.header{
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.2;
+  color: $bb;
+  font-family: 'Quicksand', sans-serif;
+  .leftimg {
+    margin: 40px 0 0 64px;
+  }
+  .home {
+    @extend %dib;
+    margin: 54px 0 0 838px;
+  }
+  .products {
+    @extend %dib;
+    margin: 54px 0 0 53px;
+  }
+  .cart {
+    margin: 50px 0 0 54px;
+  }
+}
+.content-text{
+  margin: 220px 0px 0px 0px;
+  text-align: center;
+  color: $bb;
+  font-family: 'Quicksand', sans-serif;
+  h1{
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  p{
+    font-size: 20px;
+    line-height: 1.2;
+    width: 1280-347*2;
+  }
+}
+.footer{
+  margin: 276px 0 0 623px;
+}
