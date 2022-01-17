@@ -1,0 +1,69 @@
+@import 'null.scss';
+
+//--------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.header{
+  height: 93px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #8d8d8d;
+    img{
+      margin: 22px 313px 0 265px;
+    }
+    span{
+      display: inline-block;
+      margin: 42px 0 0 40px;
+    }
+}
+.regist{
+  background-color: #709dca;
+  height: 589px;
+    h1{
+      font-family:'Lato', sans-serif;
+      font-size: 35px;
+      line-height: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.025em;
+      color: #fff;
+      text-align: center;
+      padding: 139px 0 0 0;
+    }
+    span{
+      display: inline-block;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      color: #fff;
+      margin: 10px 0 0 492px;
+    }
+    input{
+      margin: 33px 0 0 10px;
+      width: 281px;
+      height: 46px;
+      font-family: 'Lato', sans-serif;
+      font-size: 13px;
+      line-height: 1.2;
+      padding: 0 0 0 41px;
+    }
+    .txt{
+      margin: 0 0 0 306px;
+    }
+    button{
+      margin: 33px 0 0 10px;
+      Text: Request a quote;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: #ffffff;
+      width: 211px;
+      height: 46px;
+      background-color: #ffbb42;
+    }
+
+}

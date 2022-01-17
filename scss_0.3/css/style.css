@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  widows: 100%;
+  font-size: 1;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.header {
+  height: 93px;
+  font-family: "Lato", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #8d8d8d;
+}
+.header img {
+  margin: 22px 313px 0 265px;
+}
+.header span {
+  display: inline-block;
+  margin: 42px 0 0 40px;
+}
+
+.regist {
+  background-color: #709dca;
+  height: 589px;
+}
+.regist h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  color: #fff;
+  text-align: center;
+  padding: 139px 0 0 0;
+}
+.regist span {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  margin: 10px 0 0 492px;
+}
+.regist input {
+  margin: 33px 0 0 10px;
+  width: 281px;
+  height: 46px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  padding: 0 0 0 41px;
+}
+.regist .txt {
+  margin: 0 0 0 306px;
+}
+.regist button {
+  margin: 33px 0 0 10px;
+  Text: Request a quote;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 211px;
+  height: 46px;
+  background-color: #ffbb42;
+}
