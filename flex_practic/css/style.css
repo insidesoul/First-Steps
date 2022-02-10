@@ -16,15 +16,82 @@ img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*--------------------*/
 
-.wrapper {}
-.content {}
-.hi {}
-.container {}
-.hi__row {}
-.hi__body {}
-.hi__title {}
-.hi__list {}
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+body {
+	font-family: 'Shizuru', cursive;
+}
+a {
+	color: #f5c1f0;
+}
+a:hover {
+	color: #e953da;
+}
+a:active {
+	color: #4c44cf;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1180px;
+	margin: 0px auto;
+}
+.content {
+	flex: 1 1 auto;
+}
+.hi {
+	padding: 50px 0;
+	background-color: #445162;
+}
+.hi__row {
+	display: flex;
+	justify-content:  space-between;
+}
+.hi__body {
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+	color: #ffffff;
+	padding-right: 30px;
+}
+.hi__title {
+	font-size: 60px;
+	line-height: 1.2;
+	margin: 0 0 38px 0;
+}
+.hi__list li {
+	background: url('../img/icons/icon.png') 0 1px no-repeat;
+	font-size: 20px;
+	line-height: 22px;
+	padding: 0 0 0 36px;
+	margin: 0 0 16px 0;
+}
+.hi__list li:last-child{
+	margin: 0;
+}
+.hi__list {
+}
 .hi__image {}
-.footer {}
-.footer__row {}
-.footer__text {}
+.image1 {
+	width: 469px;
+	height: 214px;
+}
+
+.footer {
+	background-color: #f5f5f5;
+}
+.footer__row {
+	display: flex;
+	height: 65px;
+	justify-content: center;
+	align-items: center;
+}
+.footer__text {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	letter-spacing: 0.025em;
+	color: #445162;
+}
