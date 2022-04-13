@@ -1,240 +1,466 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Web development project</title>
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
-		<title>Видео / Aудио</title>
 	</head>
+	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="wrapper">
-			<!-- Фуллскрин -->
-			<!-- 
-			<div class="full-screen">
-				<div class="full-screen__body">
-					<div class="full-screen__title">велосипед</div>
-					<div class="full-screen__text">это крутяк</div>
+			<header class="header">
+				<div class="header__container _container">
+					<a href="" class="header__logo">Your Logo</a>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">About</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Servicing</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Portfolio</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Contact us</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link"><img src="img/icons/lupa.png" alt="lupa" class="menu__link__img"></a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<video autoplay muted loop preload="auto" class="full-screen__video">
-					<source type="video/webm" src="videos/forest.webm">
-					<source type="video/mp4" src="videos/forest.mp4">
-				</video>
-			</div>
-			<div class="content">
-				<div class="content__container">
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, possimus obcaecati, ullam impedit perspiciatis praesentium autem laudantium cumque doloribus harum nulla atque corrupti! Impedit quidem ut adipisci excepturi aliquam. Impedit.
-					</p>
+			</header>
+			<main class="main">
+				<div class="webdev">
+					<div class="webdev__container _container">
+						<div class="webdev__body">
+							<div class="webdev__title">Web development project</div>
+							<div class="webdev__subtitle">Very suitable to support all web development projects</div>
+						</div>
+						<div class="webdev__btn">
+							<a href="" class="webdev__knop knop">OUR SERVICES</a>
+							<a href="" class="webdev__knop knop">HIRE IS NOW</a>
+						</div>
+						<div class="webdev__strl">
+							<img src="img/icons/___4633.png" alt="strlk">
+						</div>
+					</div>
 				</div>
-			</div>
-			 -->
-			<!-- Адаптив -->
-			<!-- 
-			<div class="items">
-				<div class="items__container">
-					<div class="items__body">
-						<div class="item">
-							<div class="item__video">
-								<video poster="img/forest-poster.jpg" controls preload="metadata">
-									<source type="video/webm" src="videos/forest.webm">
-									<source type="video/mp4" src="videos/forest.mp4">
-								</video>
-							</div>
-							<div class="item__text">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							</div>
+				<div class="about">
+					<div class="about__container _container">
+						<div class="about__body">
+							<div class="about__title title">About Us</div>
+							<div class="about__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
 						</div>
-						<div class="item">
-							<div class="item__video">
-								<iframe src="https://www.youtube.com/embed/eKZNKA-jAYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="about__row">
+							<div class="about__column">
+								<img src="img/icons/internet_4768.png" alt="int" class="column__img">
+								<div class="column__title">Awesome Icons</div>
+								<div class="column__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
 							</div>
-							<div class="item__text">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							<div class="about__column">
+								<img src="img/icons/transfer_4702.png" alt="trnsfer" class="column__img">
+								<div class="column__title">One Page</div>
+								<div class="column__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
 							</div>
-						</div>
-						<div class="item">
-							<div class="item__video">
-								<video poster="img/forest-poster.jpg" controls preload="metadata">
-									<source type="video/webm" src="videos/forest.webm">
-									<source type="video/mp4" src="videos/forest.mp4">
-								</video>
-							</div>
-							<div class="item__text">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							</div>
-						</div>
-						<div class="item">
-							<div class="item__video">
-								<video poster="img/forest-poster.jpg" controls preload="metadata">
-									<source type="video/webm" src="videos/forest.webm">
-									<source type="video/mp4" src="videos/forest.mp4">
-								</video>
-							</div>
-							<div class="item__text">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							<div class="about__column">
+								<img src="img/icons/head_4767.png" alt="head" class="column__img">
+								<div class="column__title">Fully Responsive</div>
+								<div class="column__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			 -->
+				<div class="services">
+					<div class="services__container _container">
+						<div class="services__body">
+							<div class="services__title title">Our Services</div>
+							<div class="services__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+						</div>
+						<div class="services__row">
+							<div class="services__cart1">
+								<img src="img/icons/smartphone_4947.png" alt="" class="cart__img">
+								<div class="cart__title1">Research</div>
+								<div class="cart__text1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+								<a href="" class="cart__btn1">READ MORE</a>
+							</div>
+							<div class="services__cart">
+								<img src="img/icons/smartphone_copy_4948.png" alt="" class="cart__img">
+								<div class="cart__title">Portfolio</div>
+								<div class="cart__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+								<a href="" class="cart__btn">READ MORE</a>
+							</div>
+							<div class="services__cart">
+								<img src="img/icons/smartphone_copy_4948.png" alt="" class="cart__img">
+								<div class="cart__title">Support</div>
+								<div class="cart__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+								<a href="" class="cart__btn">READ MORE</a>
+							</div>
+							<div class="services__cart">
+								<img src="img/icons/smartphone_copy_4948.png" alt="" class="cart__img">
+								<div class="cart__title">Documentation</div>
+								<div class="cart__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+								<a href="" class="cart__btn">READ MORE</a>
+							</div>
+							<div class="services__cart">
+								<img src="img/icons/smartphone_copy_4948.png" alt="" class="cart__img">
+								<div class="cart__title">Development</div>
+								<div class="cart__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+								<a href="" class="cart__btn">READ MORE</a>
+							</div>
+							<div class="services__cart">
+								<img src="img/icons/smartphone_copy_4948.png" alt="" class="cart__img">
+								<div class="cart__title">Design</div>
+								<div class="cart__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+								<a href="" class="cart__btn">READ MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="latest">
+					<div class="latest__container _container">
+						<div class="latest__body">
+							<div class="latest__title title">Latest Works</div>
+							<div class="latest__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+						</div>
+						<div class="latest__menu">
+							<a href="" class="latest__btn">ALL</a>
+							<a href="" class="latest__btn">WEB DESIGN</a>
+							<a href="" class="latest__btn">UI/UX DESIGN</a>
+							<a href="" class="latest__btn">MOCKUPS</a>
+						</div>
+						<div class="latest__grid">
+							<div class="grid__img">
+								<div class="imggg">
+									<div class="imggg__title">Hand Watch</div>
+									<div class="imggg__text">ui/ux design</div>
+								</div>
+								<!-- <img src="img/rectangle_11_4954.png" alt="watch"> -->
+							</div>
+							<div class="grid__img">
+								<img src="img/rectangle_11_copy_5013.png" alt="watch">
+							</div>
+							<div class="grid__img">
+								<img src="img/rectangle_11_copy_2_5014.png" alt="watch">
+							</div>
+							<div class="grid__img">
+								<img src="img/rectangle_11_copy_3_5015.png" alt="watch">
+							</div>
+							<div class="grid__img">
+								<img src="img/rectangle_11_copy_3_5016.png" alt="watch">
+							</div>
+							<div class="grid__img">
+								<img src="img/rectangle_11_copy_3_5017.png" alt="watch">
+							</div>
+						</div>
+						<div class="latest__knop">
+							<a href="" class="latest__knopoch">VIEW ALL</a>
+						</div>
+					</div>
+				</div>
+				<div class="price">
+					<div class="price__container _container">
+						<div class="price__body">
+							<div class="price__title title">Pricing Plan</div>
+							<div class="price__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+						</div>
+						<div class="price__row">
+							<div class="price__colm">
+								<div class="price__colmbg">
+									<div class="colm__bg">
+										<div class="colm__title">Free Trail</div>
+										<div class="colm__money"><span class="a1">$</span><span class="a2">00</span> per month</div>
+									</div>
+									<ul class="colm__list">
+										<li class="colm__text">30 Free Trail</li>
+										<li class="colm__text">5 Free Projects</li>
+										<li class="colm__text">PHP 5 Enabled</li>
+										<li class="colm__text">24/7 Suports</li>
+									</ul>
+									<a href="" class="colm__btn">Order Now</a>
+								</div>
+							</div>
+							<div class="price__colm">
+								<div class="price__colmbg colm2">
+									<div class="colm__bg">
+										<div class="colm__title">Basic</div>
+										<div class="colm__money"><span class="a1">$</span><span class="a2">50</span> per month</div>
+									</div>
+									<ul class="colm__list">
+										<li class="colm__text">30 Free Trail</li>
+										<li class="colm__text">5 Free Projects</li>
+										<li class="colm__text">PHP 5 Enabled</li>
+										<li class="colm__text">24/7 Suports</li>
+									</ul>
+									<a href="" class="colm__btn">Order Now</a>
+								</div>
+							</div>
+							<div class="price__colm">
+								<div class="price__colmbg">
+									<div class="colm__bg">
+										<div class="colm__title">Ultimates</div>
+										<div class="colm__money"><span class="a1">$</span><span class="a2">99</span> per month</div>
+									</div>
+									<ul class="colm__list">
+										<li class="colm__text">30 Free Trail</li>
+										<li class="colm__text">5 Free Projects</li>
+										<li class="colm__text">PHP 5 Enabled</li>
+										<li class="colm__text">24/7 Suports</li>
+									</ul>
+									<a href="" class="colm__btn">Order Now</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="member">
+					<div class="member__container _container">
+						<div class="member__body">
+							<div class="member__title title">Our Team Member</div>
+							<div class="member__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+						</div>
+						<div class="member__row">
+							<div class="member__columm">
+								<div class="columm__img">
+									<img src="img/б.jpg" alt="bak">
+								</div>
+								<div class="columm__body">
+									<div class="columm__name">John Doe</div>
+									<div class="columm__dolj">General Manager</div>
+								</div>
+								<div class="columm__social">
+									<div class="social__bg">
+										<a href="">
+										<img src="img/icons/___5257.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+									<div class="social__bg">
+										<a href="">
+										<img src="img/icons/___5261.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+									<div class="social__bg">
+										<a href="">
+										<img src="img/icons/___5265.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+									<div class="social__bg">
+										<a href="">
+											<img src="img/icons/___5269.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+								</div>
+							</div>	
+							<div class="member__columm">
+								<div class="columm__img">
+									<img src="img/бак.jpg" alt="bak">
+								</div>
+								<div class="columm__body">
+									<div class="columm__name">Alexa Biru</div>
+									<div class="columm__dolj">Office Director</div>
+								</div>
+								<div class="columm__social">
+									<div class="social__bg">
+										<a href="">
+										<img src="img/icons/___5257.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+									<div class="social__bg">
+										<a href="">
+										<img src="img/icons/___5261.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+									<div class="social__bg">
+										<a href="">
+										<img src="img/icons/___5265.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+									<div class="social__bg">
+										<a href="">
+											<img src="img/icons/___5269.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="member__columm">
+								<div class="columm__img">
+									<img src="img/баксы.jpg" alt="bak">
+								</div>
+								<div class="columm__body">
+									<div class="columm__name">Ronobir sing</div>
+									<div class="columm__dolj">Admin</div>
+								</div>
+								<div class="columm__social">
+									<div class="social__bg">
+										<a href="">
+										<img src="img/icons/___5257.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+									<div class="social__bg">
+										<a href="">
+										<img src="img/icons/___5261.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+									<div class="social__bg">
+										<a href="">
+										<img src="img/icons/___5265.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+									<div class="social__bg">
+										<a href="">
+											<img src="img/icons/___5269.png" alt="icon" class="columm__icon">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog">
+					<div class="blog__container _container">
+						<div class="blog__body">
+							<div class="blog__title title">Blog</div>
+							<div class="blog__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+						</div>
+						<div class="blog__row">
+							<div class="blog__block blockk1">
+								<div class="block__img">
+									<img src="img/rectangle_17_5319.png" alt="img" class="block__img1">
+								</div>
+							</div>
+							<div class="blog__block blockk2">
+								<div class="block__cont">
+									<div class="block__body">
+										<div class="block__title">SEO Quis Vestibulum</div>
+											<div class="block__midl">
+											<div class="block__date">
+												<span class="s1">14.0702017</span>
+												<span class="s2">Development</span>
+											</div>
+										</div>
+										<div class="block__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="blog__block blockk3">
+								<div class="block__cont">
+									<div class="block__body">
+										<div class="block__title">SEO Quis Vestibulum</div>
+											<div class="block__midl">
+											<div class="block__date">
+												<span class="s1">14.0702017</span>
+												<span class="s2">Development</span>
+											</div>
+										</div>
+										<div class="block__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="blog__block blockk4">
+								<div class="block__img">
+									<img src="img/rectangle_17_5342.png" alt="img" class="block__img1">
+								</div>
+							</div>
+							<div class="blog__block blockk5">
+								<div class="block__img">
+									<img src="img/rectangle_17_5615.png" alt="img" class="block__img1">
+								</div>
+							</div>
+							<div class="blog__block blockk6">
+								<div class="block__cont">
+									<div class="block__body">
+										<div class="block__title">SEO Quis Vestibulum</div>
+											<div class="block__midl">
+											<div class="block__date">
+												<span class="s1">14.0702017</span>
+												<span class="s2">Development</span>
+											</div>
+										</div>
+										<div class="block__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="latest__knop">
+							<a href="" class="latest__knopoch">MORE VIEW</a>
+						</div>
+					</div>
+				</div>
+				<div class="contact">
+					<div class="contact__container _container">
+						<div class="contact__body">
+							<div class="contact__title title">Contact Us</div>
+							<div class="contact__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+						</div>
+						<div class="contact__row">
+							<div class="contact__last">
+								<div class="last__img">
+									<img src="img/icons/placeholder_5653.png" alt="img" class="last__i">
+								</div>
+								<div class="last__body">
+									<div class="last__text">
+										Nobinagar savar,Dhaka Bangladesh
+									</div>
+								</div>
+							</div>
+							<div class="contact__last">
+								<div class="last__img">
+									<img src="img/icons/phone_call_5655.png" alt="img" class="last__i">
+								</div>
+								<div class="last__body">
+									<div class="last__text">
+										+0801743831996
+										+0801920737807
+									</div>
+								</div>
+							</div>
+							<div class="contact__last">
+								<div class="last__img">
+									<img src="img/icons/mail_5659.png" alt="img" class="last__i3">
+								</div>
+								<div class="last__body">
+									<div class="last__text">
+										VLADIMIR@gmail.com
+										VLADISLAV@yahoo.com
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contact__form">
+							<div class="form__row">
+								<form action="" method="post">
+									<input type="text" placeholder="Your NAME" class="form__name">
+									<input type="text" placeholder="Your Email" class="form__mail">
+									<textarea name="text" placeholder="Write Massage" id="" cols="" rows="10" class="form__massage"></textarea>
+									<div class="btnnn">
+										<button class="form__btn" type="submit">SEND</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">All rights Reserved © 2017</footer>
 		</div>
 	</body>
 </html>
-
-<!-- <audio controls src="audio/Muriel-BobbyRichards.mp3"></audio> -->
-<!--
-src
-Указывает путь к воспроизводимому аудиофайлу.
-
-muted
-Выключает аудиодорожку
-
-autoplay
-Аудио начинает воспроизводиться автоматически после загрузки страницы.*
-
-controls
-Добавляет панель управления к аудиофайлу.
-
-loop
-Повторяет воспроизведение аудио с начала после его завершения.
-
-preload
-Используется для загрузки аудио вместе с загрузкой веб-страницы.
-
-Этот атрибут предназначен для того, 
-чтобы дать контролировать загрузку медиафайла. 
-Он может иметь одно из следующих значений:
-- none: указывает, что видео не должно быть предварительно загружено.
-- metadata: указывает, что предварительно загружаются метаданные аудио 
-	(например, длина).
-- auto: указывает, что весь аудиофайл может быть загружен, 
-	даже если пользователь не должен его использовать.
-- пустая строка: синоним значения auto.
-
-Если не задано, значение атрибута определяется браузером 
-по умолчанию (то есть, каждый браузер имеет по умолчанию 
-значение данного атрибута). 
-Спецификация рекомендует использовать metadata.
- -->
-
-<!-- =========================================================== -->
-<!-- 
-<video poster="img/forest-poster.jpg" controls preload="metadata">
-	<source type="video/webm" src="videos/forest.webm">
-	<source type="video/mp4" src="videos/forest.mp4">
-</video>
- -->
-<!--
-src
-Указывает путь к воспроизводимому видеоролику.
-
-width
-Задает ширину области для воспроизведения видеоролика.
-
-height 
-Задает высоту области для воспроизведения видеоролика.
-
-muted
-Выключает аудиодорожку
-
-autoplay
-Видео начинает воспроизводиться автоматически после загрузки страницы.*
-
-controls
-Добавляет панель управления к видеоролику.
-
-loop
-Повторяет воспроизведение видео с начала после его завершения.
-
-poster
-Указывает адрес картинки, которая будет отображаться, 
-пока видео не доступно или не воспроизводится.
-
-preload
-Используется для загрузки видео вместе с загрузкой веб-страницы.
-
-Этот атрибут предназначен для того, 
-чтобы дать контролировать загрузку медиафайла. 
-Он может иметь одно из следующих значений:
-- none: указывает, что видео не должно быть предварительно загружено.
-- metadata: указывает, что предварительно загружаются метаданные видео 
-	(например, длина).
-- auto: указывает, что весь видеофайл может быть загружен, 
-	даже если пользователь не должен его использовать.
-- пустая строка: синоним значения auto.
-
-Если не задано, значение атрибута определяется браузером 
-по умолчанию (то есть, каждый браузер имеет по умолчанию 
-значение данного атрибута). 
-Спецификация рекомендует использовать metadata.
- -->
