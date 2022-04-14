@@ -34,6 +34,17 @@ body {
 	margin: 0px auto;
 }
 /*-----------------------------------------------------*/
+.vovan {
+	display: none;
+}
+@media (max-width: 760px){
+	.vovan {
+		display: block
+	}
+	header {
+		display: none
+	}
+}
 .header {}
 .header__container {
 	display: flex;
